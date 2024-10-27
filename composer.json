@@ -1,0 +1,25 @@
+{
+    "name": "stdimitrov/first-package",
+    "description": "A PHP package that demonstrates my first library.",
+    "type": "library",
+    "require": {
+        "php": ">=7.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Stdimitrov\\FirstPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stdimitrov"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.4"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

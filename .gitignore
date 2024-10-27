@@ -1,0 +1,10 @@
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore environment variables
+.env
+
+# Ignore IDE and system files
+.idea/
+*.log
+.DS_Store

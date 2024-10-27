@@ -1,0 +1,27 @@
+services:
+
+  # PHP Service
+  php_helloworld:
+    build:
+      context: ./.docker
+      dockerfile: Dockerfile
+    container_name: php_helloworld
+    restart: unless-stopped
+    working_dir: /var/www/php
+    env_file:
+      - ./.docker/.env
+    volumes:
+      - ./src:/var/www/php/src
+      - ./tests:/var/www/php/tests
+      - ./composer.json:/var/www/php/composer.json
+      - ./vendor:/var/www/php/vendor
+    networks:
+      - docker_network
+
+# Volumes
+volumes:
+  composer_data:
+
+networks:
+  docker_network:
+    external: true
