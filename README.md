@@ -7,4 +7,4 @@ This is my first PHP package, which includes a simple `Greeter` class that retur
 You can install this package via Composer:
 
 ```bash
-composer require your-vendor/my-first-package
+composer require stdimitrov/FirstPackage
